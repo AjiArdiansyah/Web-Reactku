@@ -4,11 +4,12 @@ const Post = (props) => {
     return (
         <div className="artikel">
             <div className="gambar-artikel">
-                <img src="http://placeimg.com/80/80" alt="Gambar Tumbail Artikel"></img>
+                <img src="http://placeimg.com/80/80/tech" alt="Gambar Tumbail Artikel"></img>
                 </div>
                 <div className="konten-artikel">
                     <div className="judul-artikel">{props.judul}</div>
                     <p className="isi-artikel">Isi Artikel{props.isi}</p>
+                    <button className="btn btn-sm btn-warning" onClick={() => props.hapusArtikel(props.idArtikel)}>Hapus</button>
                     </div>
                 </div>
     )
